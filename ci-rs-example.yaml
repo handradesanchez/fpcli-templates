@@ -1,0 +1,11 @@
+---
+arguments:
+  team: DCOPS
+  os: Ubuntu 20  # || Ubuntu 16 || Windows 2012 || Ubuntu 14 || Windows2012 6.2
+  role: roles::default
+  ci-rs:
+    hostname_template: handrade-test-ubuntu-%02d
+    machine_size: t2.small
+    network: default
+  disks:
+    - size_gb: 30
